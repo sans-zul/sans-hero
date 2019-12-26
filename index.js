@@ -11,6 +11,10 @@ app.get('/sanjari', function (req, res) {
     res.send("Sanjari");
 });
 
+app.post('/sanjari', function (req, res) {
+    res.send("You just called the post method at '/hello'!\n");
+});
+
 app.listen(PORT, function () {
     console.log(`Server Starts on ${PORT}`);
 });
