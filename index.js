@@ -9,8 +9,12 @@ app.get('/', function (req, res) {
     res.send("Hello World!");
 });
 
-app.get('/sanjari', function (req, res) {
-    res.send("Sanjari");
+app.get('/login', function (req, res) {
+    res.send("Login");
+});
+
+app.get('/register', function (req, res) {
+    res.send("Register");
 });
 
 app.listen(PORT, function () {
