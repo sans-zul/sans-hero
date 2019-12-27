@@ -1,12 +1,17 @@
 var express = require('express');
-var app = express();
+var hbs = require('hbs');
 
+var app = express();
 var PORT = process.env.PORT || 3000;
 
+
+app.set('views', path.join(__dirname, 'views'));
 app.use(express.static('public'));
+app.set('view engine', 'hbs');
+
 
 app.get('/', function (req, res) {
-    res.send("Hello World!");
+    res.render('index')
 });
 
 app.get('/login', function (req, res) {
