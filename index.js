@@ -12,11 +12,11 @@ app.set('view engine', 'hbs');
 
 
 app.get('/', function (req, res) {
-    res.render('index')
+    res.render('index');
 });
 
 app.get('/login', function (req, res) {
-    res.send("Login");
+    res.render('login')
 });
 
 app.get('/register', function (req, res) {
