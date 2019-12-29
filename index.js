@@ -25,7 +25,12 @@ app.post('/login', function (req, res) {
 });
 
 app.get('/register', function (req, res) {
-    res.send("Register");
+    res.render('register');
+});
+
+app.post('/register', function (req, res) {
+    console.log("post");
+    res.render('register');
 });
 
 app.listen(PORT, function () {
