@@ -2,6 +2,10 @@ var express = require('express');
 var path = require('path');
 var hbs = require('hbs');
 
+// const home = require('./routes/index');
+// const login = reuqire('./routes/login');
+// const register = require('./routes/register');
+
 var app = express();
 var PORT = process.env.PORT || 3000;
 
